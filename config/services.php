@@ -35,4 +35,20 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | DataForSEO API Credentials
+    |--------------------------------------------------------------------------
+    | Set DATAFORSEO_LOGIN and DATAFORSEO_PASSWORD in your .env file.
+    | You can find these in your DataForSEO account dashboard.
+    | API docs: https://docs.dataforseo.com/v3/
+    */
+    'dataforseo' => [
+        'login'    => env('DATAFORSEO_LOGIN'),
+        'password' => env('DATAFORSEO_PASSWORD'),
+        // When true, the service returns fake mock data — no API calls are made.
+        // Set DATAFORSEO_SANDBOX=true in .env for local development/testing.
+        'sandbox'  => env('DATAFORSEO_SANDBOX', false),
+    ],
+
 ];

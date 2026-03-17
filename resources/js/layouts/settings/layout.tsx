@@ -26,6 +26,8 @@ const sidebarNavItems: NavItem[] = [
         href: editAppearance(),
         icon: null,
     },
+    // API Settings has moved to /admin/api-settings (admin-only).
+    // Regular users do not manage API credentials.
 ];
 
 export default function SettingsLayout({ children }: PropsWithChildren) {
